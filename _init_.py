@@ -1,9 +1,9 @@
-from operations import division
+from operations import exponention
 def game():
     score = 0
     while True:
         print('======== Menu ========'
-            '\n1. Division'
+            '\n1. Exponention'
             '\n0. Exit')
         option = int(input('\nChoice an option: '))
         
@@ -14,9 +14,9 @@ def game():
         answer = int(input('Enter you answer: '))
 
         if option == 1:
-            result = division(num_1, num_2)
+            result = exponention(num_1, num_2)
             if result == answer:
-                score += 2
+                score += 4
                 print('Correct!!')
             else:
                 print('Incorrect')
