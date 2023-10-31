@@ -1,9 +1,9 @@
-from operations import exponention
+from operations import quotient
 def game():
     score = 0
     while True:
         print('======== Menu ========'
-            '\n1. Exponention'
+            '\n1. Quotient'
             '\n0. Exit')
         option = int(input('\nChoice an option: '))
         
@@ -14,7 +14,7 @@ def game():
         answer = int(input('Enter you answer: '))
 
         if option == 1:
-            result = exponention(num_1, num_2)
+            result = quotient(num_1, num_2)
             if result == answer:
                 score += 4
                 print('Correct!!')
