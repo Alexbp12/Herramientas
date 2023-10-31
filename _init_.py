@@ -1,9 +1,9 @@
-from operations import add
+from operations import multiply
 def game():
     score = 0
     while True:
         print('======== Menu ========'
-            '\n1. Subtract'
+            '\n1. Multiply'
             '\n0. Exit')
         option = int(input('\nChoice an option: '))
         
@@ -14,9 +14,9 @@ def game():
         answer = int(input('Enter you answer: '))
 
         if option == 1:
-            result = add(num_1, num_2)
+            result = multiply(num_1, num_2)
             if result == answer:
-                score += 1
+                score += 2
                 print('Correct!!')
             else:
                 print('Incorrect')
